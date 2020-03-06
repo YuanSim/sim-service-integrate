@@ -2,7 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a9097c4-609e-4754-b821-1e73ed7084c1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/qr-code/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qr-code/qr-code-google/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qr-code/qr-code-google/src/main/java/qr/code/google/AppStart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qr-code/qr-code-google/src/main/java/qr/code/google/LocalDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sim-test/rest-test/src/main/java/com/sim/rest/test/AppStart.java" beforeDir="false" afterPath="$PROJECT_DIR$/sim-test/rest-test/src/main/java/com/sim/rest/test/AppStart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sim-test/rest-test/src/main/java/com/sim/rest/test/controller/DemoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/sim-test/rest-test/src/main/java/com/sim/rest/test/controller/DemoController.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,6 +24,7 @@
         <option value="Class" />
       </list>
     </option>
+    <option name="SCHEME" value="Project" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -28,9 +37,14 @@
     </option>
   </component>
   <component name="ProjectId" id="1YgxluKDJYuWVESBpJul1mwFUCk" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -44,7 +58,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.LocalDemo">
+    <configuration name="LocalDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="qr.code.google.LocalDemo" />
+      <module name="qr-code-google" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="qr.code.google.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AppStart" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="rest-test" />
       <extension name="coverage">
@@ -60,6 +87,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LocalDemo" />
         <item itemvalue="Spring Boot.AppStart" />
       </list>
     </recent_temporary>
@@ -75,6 +103,7 @@
       <option name="presentableId" value="Default" />
       <updated>1583378192188</updated>
       <workItem from="1583378195666" duration="3787000" />
+      <workItem from="1583460490525" duration="4473000" />
     </task>
     <servers />
   </component>
@@ -86,10 +115,15 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 /**
  * @Title:
  * @Description:
- * @Company: 积分圈科技有限公司
+ * @Company:
  * @Author: Simon.Mr
  * @Created 2020/3/5
  */
