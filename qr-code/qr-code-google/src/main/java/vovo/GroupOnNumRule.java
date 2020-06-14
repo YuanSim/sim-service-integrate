@@ -68,8 +68,13 @@ public class GroupOnNumRule extends Rule{
 
                     }
 
-                    coll2.addAll(collect1);
-                    numberCount.set(numberCount.get() - collect1.size());
+                    /**
+                     * 添加判断 如果已存在的团数据 不要重复添加
+                     */
+                    if(!coll2.containsAll(collect1)) {
+                        coll2.addAll(collect1);
+                        numberCount.set(numberCount.get() - collect1.size());
+                    }
 
                 });
 
