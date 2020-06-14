@@ -5,6 +5,7 @@ import com.google.zxing.WriterException;
 import com.google.zxing.client.j2se.MatrixToImageWriter;
 import com.google.zxing.common.BitMatrix;
 import com.google.zxing.qrcode.QRCodeWriter;
+import com.sun.org.apache.xpath.internal.operations.Bool;
 import org.springframework.util.ResourceUtils;
 import sun.misc.BASE64Encoder;
 
@@ -13,6 +14,11 @@ import java.awt.image.BufferedImage;
 import java.io.*;
 import java.net.URL;
 import java.nio.file.Paths;
+import java.text.DateFormat;
+import java.text.NumberFormat;
+import java.text.SimpleDateFormat;
+import java.util.*;
+import java.util.stream.Collectors;
 
 import static com.sun.javafx.scene.control.skin.Utils.getResource;
 
@@ -25,23 +31,62 @@ import static com.sun.javafx.scene.control.skin.Utils.getResource;
  */
 public class LocalDemo {
 
-    public static void main(String[] args) throws WriterException, IOException {
+    /**
+     *
+     */
+    private static final String DATE_FORMAT = "yyyyMMddHHmmssSSSS";
 
-//        File file = new File(this.getClass().getResource("").getPath());
-/*
-        String path = System.getProperty("user.dir") + File.separator + "src" + File.separator + "main" + File.separator + "resources" + File.separator;
+    /**
+     *
+     */
+    private static final DateFormat DF = new SimpleDateFormat(DATE_FORMAT);
 
-        String img_name = "jfq.png";
-        //创建二维码对象
-        QRCodeWriter qrCodeWriter = new QRCodeWriter();
-        //生成二维码
-        BitMatrix bitMatrix =
-                qrCodeWriter.encode("http://organizationtest.jf-pay.com", BarcodeFormat.QR_CODE,30,30);
+    /**
+     *
+     */
+    private static final NumberFormat NF = NumberFormat.getIntegerInstance();
+
+    /**
+     *
+     */
+    private static final int TIMESTAMP_LENGTH = 18;
+
+    /**
+     *
+     */
+    private static final int DEFAULT_LENGTH = 21;
+
+    /**
+     *
+     */
+    private static final int MIN_LENGTH = 20;
+
+    private static int length = 0;
+
+    public static void main(String[] args) {
 
 
-        OutputStream os = new FileOutputStream(path);
-        MatrixToImageWriter.writeToStream(bitMatrix, "png", os);*/
+        System.out.println(nextCode("sad"));
+    }
 
+
+    public static String nextCode() {
+        Calendar calendar = Calendar.getInstance();
+        long seed = calendar.getTimeInMillis();
+        Random random = new Random(seed);
+        if (length < MIN_LENGTH) {
+            length = DEFAULT_LENGTH;
+        }
+
+        int randomLength = length - TIMESTAMP_LENGTH;
+        int max = (int) Math.pow(10, randomLength) - 1;
+        NF.setMaximumIntegerDigits(randomLength);
+        NF.setMinimumIntegerDigits(randomLength);
+        return DF.format(calendar.getTime()) + NF.format(random.nextInt(max));
+    }
+
+    public static String nextCode(String prefix) {
+        return (prefix == null ? "" : prefix) + nextCode();
     }
 }
 

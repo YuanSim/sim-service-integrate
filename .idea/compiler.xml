@@ -10,16 +10,10 @@
         <module name="qr-code-google" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="sim-framework-dependencies" target="1.5" />
-      <module name="sim-framework-template" target="1.8" />
-      <module name="sim-service-dependencies (1)" target="1.5" />
-    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="rest-test" options="" />
-      <module name="sim-framework-template" options="-parameters" />
       <module name="sim-service-integrate" options="-parameters" />
       <module name="sim-test" options="-parameters" />
     </option>

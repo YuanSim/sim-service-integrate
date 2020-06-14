@@ -2,15 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a9097c4-609e-4754-b821-1e73ed7084c1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/qr-code/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/qr-code/qr-code-google/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/qr-code/qr-code-google/src/main/java/qr/code/google/AppStart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/qr-code/qr-code-google/src/main/java/qr/code/google/LocalDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qr-code/qr-code-google/src/main/java/qr/code/google/BtS.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qr-code/qr-code-google/src/main/java/qr/code/google/Test1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qr-code/qr-code-google/src/main/java/vovo/ActPrice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qr-code/qr-code-google/src/main/java/vovo/CommidityRule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qr-code/qr-code-google/src/main/java/vovo/GroupOnNum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qr-code/qr-code-google/src/main/java/vovo/GroupOnNumRule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qr-code/qr-code-google/src/main/java/vovo/Groupon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qr-code/qr-code-google/src/main/java/vovo/PriceRule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qr-code/qr-code-google/src/main/java/vovo/Rule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qr-code/qr-code-google/src/main/java/vovo/Sku.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qr-code/qr-code-google/src/main/java/vovo/Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sim-test/rest-test/src/main/java/com/sim/rest/test/AppStart.java" beforeDir="false" afterPath="$PROJECT_DIR$/sim-test/rest-test/src/main/java/com/sim/rest/test/AppStart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sim-test/rest-test/src/main/java/com/sim/rest/test/controller/DemoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/sim-test/rest-test/src/main/java/com/sim/rest/test/controller/DemoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qr-code/qr-code-google/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/qr-code/qr-code-google/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qr-code/qr-code-google/src/main/java/qr/code/google/LocalDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/qr-code/qr-code-google/src/main/java/qr/code/google/LocalDemo.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,7 +51,24 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+  </component>
+  <component name="RestServicesNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="Found 1 services " type="fcff1e1b:RestServiceStructure$RootNode" />
+        </path>
+        <path>
+          <item name="Found 1 services " type="fcff1e1b:RestServiceStructure$RootNode" />
+          <item name="rest-test" type="c588b436:RestServiceStructure$ProjectNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -58,9 +82,35 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.LocalDemo">
+  <component name="RunManager" selected="Application.Test">
     <configuration name="LocalDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="qr.code.google.LocalDemo" />
+      <module name="qr-code-google" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="qr.code.google.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="vovo.Test" />
+      <module name="qr-code-google" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="vovo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="qr.code.google.Test1" />
       <module name="qr-code-google" />
       <extension name="coverage">
         <pattern>
@@ -87,6 +137,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.Test1" />
         <item itemvalue="Application.LocalDemo" />
         <item itemvalue="Spring Boot.AppStart" />
       </list>
@@ -104,6 +156,17 @@
       <updated>1583378192188</updated>
       <workItem from="1583378195666" duration="3787000" />
       <workItem from="1583460490525" duration="4473000" />
+      <workItem from="1589422724831" duration="4151000" />
+      <workItem from="1589790112550" duration="2318000" />
+      <workItem from="1589987130806" duration="1139000" />
+      <workItem from="1590027222175" duration="816000" />
+      <workItem from="1590739008988" duration="606000" />
+      <workItem from="1591068035540" duration="616000" />
+      <workItem from="1591146074114" duration="26000" />
+      <workItem from="1591263401951" duration="3244000" />
+      <workItem from="1591577387775" duration="3000" />
+      <workItem from="1591669019027" duration="673000" />
+      <workItem from="1592110877163" duration="12707000" />
     </task>
     <servers />
   </component>
