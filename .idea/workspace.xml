@@ -2,22 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a9097c4-609e-4754-b821-1e73ed7084c1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/qr-code/qr-code-google/src/main/java/qr/code/google/BtS.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/qr-code/qr-code-google/src/main/java/qr/code/google/Test1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/qr-code/qr-code-google/src/main/java/vovo/ActPrice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/qr-code/qr-code-google/src/main/java/vovo/CommidityRule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/qr-code/qr-code-google/src/main/java/vovo/GroupOnNum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/qr-code/qr-code-google/src/main/java/vovo/GroupOnNumRule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/qr-code/qr-code-google/src/main/java/vovo/Groupon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/qr-code/qr-code-google/src/main/java/vovo/PriceRule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/qr-code/qr-code-google/src/main/java/vovo/Rule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/qr-code/qr-code-google/src/main/java/vovo/Sku.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/qr-code/qr-code-google/src/main/java/vovo/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qr-code/qr-code-google/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/qr-code/qr-code-google/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qr-code/qr-code-google/src/main/java/qr/code/google/LocalDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/qr-code/qr-code-google/src/main/java/qr/code/google/LocalDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qr-code/qr-code-google/src/main/java/vovo/GroupOnNumRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/qr-code/qr-code-google/src/main/java/vovo/GroupOnNumRule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qr-code/qr-code-google/src/main/java/vovo/PriceRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/qr-code/qr-code-google/src/main/java/vovo/PriceRule.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -167,6 +154,7 @@
       <workItem from="1591577387775" duration="3000" />
       <workItem from="1591669019027" duration="673000" />
       <workItem from="1592110877163" duration="12707000" />
+      <workItem from="1592144036324" duration="333000" />
     </task>
     <servers />
   </component>

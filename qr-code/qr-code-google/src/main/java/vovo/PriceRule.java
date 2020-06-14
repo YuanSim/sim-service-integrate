@@ -13,15 +13,17 @@ public class PriceRule extends Rule {
     @Override
     protected void calculation(List<Groupon> groupon) {
 
+        int count = getCount();
+
+        /**
+         * 找到团对应的SKU，设置到已选商品
+         */
+
+        setSkus("根据团code找到的SKU，最多找count个");
+
+        setCount(count - "找到的SKU的数量");
+
     }
 
-/*    @Override
-    protected void calculation(int type) {
-        if(type == 3) {
-            System.out.println("价格计算规则");
-        }
-        System.out.println("价格过低，未能达到计算规则要求");
-        nextRule.calculation(type);
 
-    }*/
 }

@@ -68,29 +68,31 @@ public class GroupOnNumRule extends Rule{
 
                     }
 
+                    if(collect1.size() > 1) {
+
+
+                        List<Groupon> collect3 = groupon.stream().filter(c -> {
+                            Optional<GroupOnNum> first = coll2.stream().filter(x -> x.getActCode().equals(c.getActCode())).findFirst();
+                            if (first.isPresent()) {
+                                return true;
+                            }
+                            return false;
+                        }).collect(Collectors.toList());
+
+                        /**
+                         * 当成团人数相同的团 数量大于1个的时候，调用价格规则 进行计算价格优先
+                         */
+
+                        nextRule.calculation(collect3);
+                    }
+
+                    // TODO: 2020/6/14 采用优先实施处理
                     /**
                      * 添加判断 如果已存在的团数据 不要重复添加
                      */
-                    if(!coll2.containsAll(collect1)) {
-                        coll2.addAll(collect1);
-                        numberCount.set(numberCount.get() - collect1.size());
-                    }
+
 
                 });
-
-
-
-        List<Groupon> collect1 = groupon.stream().filter(c -> {
-            Optional<GroupOnNum> first = coll2.stream().filter(x -> x.getActCode().equals(c.getActCode())).findFirst();
-            if (first.isPresent()) {
-                    return true;
-            }
-            return false;
-        }).collect(Collectors.toList());
-
-            nextRule.calculation(collect1);
-
-        System.out.println("成团人数太少，未能达到计算规则要求");
 
     }
 }
